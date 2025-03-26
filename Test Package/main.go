@@ -1,0 +1,86 @@
+package main
+
+import (
+	"runtime"
+
+	"fmt"
+
+	weather "github.com/Com1Software/Go-Weather"
+)
+
+// ----------------------------------------------------------------
+func main() {
+	fmt.Println("Weather")
+	fmt.Printf("Operating System : %s\n", runtime.GOOS)
+	//url := "https://forecast.weather.gov/MapClick.php?lat=41.5&lon=-81.7&unit=0&lg=english&FcstType=dwml"
+	url := "https://forecast.weather.gov/MapClick.php?lat=41.25&lon=-81.44&unit=0&lg=english&FcstType=dwml"
+
+	fmt.Printf("Current Time : %s\n", weather.GetWeather(url, 0))
+	fmt.Printf("Location : %s\n", weather.GetWeather(url, 1))
+	fmt.Printf("Hazard Warning : %s\n", weather.GetWeather(url, 2))
+	fmt.Printf("Current Teperature Fahrenheit : %s\n", weather.GetWeather(url, 3))
+	fmt.Printf("Current Teperature Celsius : %s\n", weather.GetWeather(url, 4))
+	fmt.Printf("Current Conditions : %s\n", weather.GetWeather(url, 5))
+	fmt.Printf("Current Conditions Icon: %s\n", weather.GetWeather(url, 6))
+	fmt.Printf("Sustaind Wind: %s\n", weather.GetWeather(url, 7))
+	fmt.Printf("Wind Gusts : %s\n", weather.GetWeather(url, 8))
+	fmt.Printf("Barometer : %s\n", weather.GetWeather(url, 9))
+	fmt.Printf("Humidity : %s\n", weather.GetWeather(url, 10))
+	fmt.Printf("Dewpoint Fahrenheit: %s\n", weather.GetWeather(url, 11))
+	fmt.Printf("Dewpoint Celsius: %s\n", weather.GetWeather(url, 12))
+	fmt.Printf("Visibility : %s\n", weather.GetWeather(url, 13))
+	fmt.Printf("Wind Chill : %s\n", weather.GetWeather(url, 14))
+	fmt.Printf("Forecast Slot 0 Period: %s\n", weather.GetWeather(url, 15))
+	fmt.Printf("Forecast Slot 0 Conditions : %s\n", weather.GetWeather(url, 16))
+	fmt.Printf("Forecast Slot 0 Icon : %s\n", weather.GetWeather(url, 17))
+	fmt.Printf("Forecast Slot 0 Text : %s\n", weather.GetWeather(url, 18))
+	fmt.Printf("Forecast Slot 1 Period: %s\n", weather.GetWeather(url, 19))
+	fmt.Printf("Forecast Slot 1 Conditions : %s\n", weather.GetWeather(url, 20))
+	fmt.Printf("Forecast Slot 1 Icon : %s\n", weather.GetWeather(url, 21))
+	fmt.Printf("Forecast Slot 1 Text : %s\n", weather.GetWeather(url, 22))
+	fmt.Printf("Forecast Slot 2 Period: %s\n", weather.GetWeather(url, 23))
+	fmt.Printf("Forecast Slot 2 Conditions : %s\n", weather.GetWeather(url, 24))
+	fmt.Printf("Forecast Slot 2 Icon : %s\n", weather.GetWeather(url, 25))
+	fmt.Printf("Forecast Slot 2 Text : %s\n", weather.GetWeather(url, 26))
+	fmt.Printf("Forecast Slot 3 Period: %s\n", weather.GetWeather(url, 27))
+	fmt.Printf("Forecast Slot 3 Conditions : %s\n", weather.GetWeather(url, 28))
+	fmt.Printf("Forecast Slot 3 Icon : %s\n", weather.GetWeather(url, 29))
+	fmt.Printf("Forecast Slot 3 Text : %s\n", weather.GetWeather(url, 30))
+	fmt.Printf("Forecast Slot 4 Period: %s\n", weather.GetWeather(url, 31))
+	fmt.Printf("Forecast Slot 4 Conditions : %s\n", weather.GetWeather(url, 32))
+	fmt.Printf("Forecast Slot 4 Icon : %s\n", weather.GetWeather(url, 33))
+	fmt.Printf("Forecast Slot 4 Text : %s\n", weather.GetWeather(url, 34))
+	fmt.Printf("Forecast Slot 5 Period: %s\n", weather.GetWeather(url, 35))
+	fmt.Printf("Forecast Slot 5 Conditions : %s\n", weather.GetWeather(url, 36))
+	fmt.Printf("Forecast Slot 5 Icon : %s\n", weather.GetWeather(url, 37))
+	fmt.Printf("Forecast Slot 5 Text : %s\n", weather.GetWeather(url, 38))
+	fmt.Printf("Forecast Slot 6 Period: %s\n", weather.GetWeather(url, 39))
+	fmt.Printf("Forecast Slot 6 Conditions : %s\n", weather.GetWeather(url, 40))
+	fmt.Printf("Forecast Slot 6 Icon : %s\n", weather.GetWeather(url, 41))
+	fmt.Printf("Forecast Slot 6 Text : %s\n", weather.GetWeather(url, 42))
+	fmt.Printf("Forecast Slot 7 Period: %s\n", weather.GetWeather(url, 43))
+	fmt.Printf("Forecast Slot 7 Conditions : %s\n", weather.GetWeather(url, 44))
+	fmt.Printf("Forecast Slot 7 Icon : %s\n", weather.GetWeather(url, 45))
+	fmt.Printf("Forecast Slot 7 Text : %s\n", weather.GetWeather(url, 46))
+	fmt.Printf("Forecast Slot 8 Period: %s\n", weather.GetWeather(url, 47))
+	fmt.Printf("Forecast Slot 8 Conditions : %s\n", weather.GetWeather(url, 48))
+	fmt.Printf("Forecast Slot 8 Icon : %s\n", weather.GetWeather(url, 49))
+	fmt.Printf("Forecast Slot 8 Text : %s\n", weather.GetWeather(url, 50))
+	fmt.Printf("Forecast Slot 9 Period: %s\n", weather.GetWeather(url, 51))
+	fmt.Printf("Forecast Slot 9 Conditions : %s\n", weather.GetWeather(url, 52))
+	fmt.Printf("Forecast Slot 9 Icon : %s\n", weather.GetWeather(url, 53))
+	fmt.Printf("Forecast Slot 9 Text : %s\n", weather.GetWeather(url, 54))
+	fmt.Printf("Forecast Slot 10 Period: %s\n", weather.GetWeather(url, 55))
+	fmt.Printf("Forecast Slot 10 Conditions : %s\n", weather.GetWeather(url, 56))
+	fmt.Printf("Forecast Slot 10 Icon : %s\n", weather.GetWeather(url, 57))
+	fmt.Printf("Forecast Slot 10 Text : %s\n", weather.GetWeather(url, 58))
+	fmt.Printf("Forecast Slot 11 Period: %s\n", weather.GetWeather(url, 59))
+	fmt.Printf("Forecast Slot 11 Conditions : %s\n", weather.GetWeather(url, 60))
+	fmt.Printf("Forecast Slot 11 Icon : %s\n", weather.GetWeather(url, 61))
+	fmt.Printf("Forecast Slot 11 Text : %s\n", weather.GetWeather(url, 62))
+	fmt.Printf("Forecast Slot 12 Period: %s\n", weather.GetWeather(url, 63))
+	fmt.Printf("Forecast Slot 12 Conditions : %s\n", weather.GetWeather(url, 64))
+	fmt.Printf("Forecast Slot 12 Icon : %s\n", weather.GetWeather(url, 65))
+	fmt.Printf("Forecast Slot 12 Text : %s\n", weather.GetWeather(url, 66))
+
+}

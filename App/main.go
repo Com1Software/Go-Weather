@@ -30,31 +30,31 @@ func main() {
 
 	forcastButton := widget.NewButton("Forecast", func() {
 		fd := weather.GetWeather(url, 15) + " " + weather.GetWeather(url, 16) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 18), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 18), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 19) + " " + weather.GetWeather(url, 20) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 22), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 22), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 23) + " " + weather.GetWeather(url, 24) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 26), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 26), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 27) + " " + weather.GetWeather(url, 28) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 30), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 30), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 31) + " " + weather.GetWeather(url, 32) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 34), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 34), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 35) + " " + weather.GetWeather(url, 36) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 38), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 38), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 39) + " " + weather.GetWeather(url, 40) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 42), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 42), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 43) + " " + weather.GetWeather(url, 44) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 46), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 46), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 47) + " " + weather.GetWeather(url, 48) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 50), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 50), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 51) + " " + weather.GetWeather(url, 52) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 54), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 54), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 55) + " " + weather.GetWeather(url, 56) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 58), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 58), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 59) + " " + weather.GetWeather(url, 60) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 62), 50) + "\n\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 62), 40) + "\n\n"
 		fd = fd + weather.GetWeather(url, 63) + " " + weather.GetWeather(url, 64) + "\n "
-		fd = fd + wordWrap(weather.GetWeather(url, 66), 50) + "\n"
+		fd = fd + wordWrap(weather.GetWeather(url, 66), 40) + "\n"
 
 		content := widget.NewLabel(fd)
 		scrollableContent := container.NewVScroll(content)
@@ -82,11 +82,7 @@ func main() {
 		forcastButton,
 		exitButton,
 	))
-
-	// Resize the window to make it larger
 	w.Resize(fyne.NewSize(400, 300))
-
-	// Show the window and run the application
 	w.ShowAndRun()
 }
 

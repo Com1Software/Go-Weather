@@ -28,6 +28,7 @@ func main() {
 	dp := widget.NewLabel("Dew Point :" + weather.GetWeather(url, 11))
 	vis := widget.NewLabel("Visibility :" + weather.GetWeather(url, 13))
 	wc := widget.NewLabel("Wind Chill :" + weather.GetWeather(url, 14))
+	hw := widget.NewLabel("Hazard Warning :" + weather.GetWeather(url, 2))
 
 	forcastButton := widget.NewButton("Forecast", func() {
 		fd := weather.GetWeather(url, 15) + " " + weather.GetWeather(url, 16) + "\n "
@@ -80,6 +81,7 @@ func main() {
 		dp,
 		vis,
 		wc,
+		hw,
 		forcastButton,
 		exitButton,
 	))

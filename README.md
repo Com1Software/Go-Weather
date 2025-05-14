@@ -8,6 +8,6 @@ A Go package that returns weather data for a specified location
 [www.weather.gov/rss/](https://www.weather.gov/rss/)
 
 
-../../gopath/bin/bin/fyne package -os android -appID com.example.myweatherapp
+../../gopath/bin/bin/fyne package -os android -app-id com.example.myweatherapp
 
-/users/infor/go//bin/fyne package -os android -appID com.example.myweatherapp
+/users/infor/go//bin/fyne package -os android -app-id com.example.myweatherapp
